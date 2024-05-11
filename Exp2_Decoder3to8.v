@@ -1,6 +1,7 @@
-module decoder_struct(  
-  input [2:0] a,    
-  output [7:0] d    
+
+module decoder_struct(  
+  input [2:0] a,    
+  output [7:0] d    
    );
 wire x,y,z;
 not g1(z,a[0]);
@@ -15,6 +16,3 @@ and g9(d[5],a[2],y,a[0]);
 and g10(d[6],a[2],a[1],z);
 and g11(d[7],a[2],a[1],a[0]);
 endmodule
-
-
-
